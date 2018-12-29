@@ -8,8 +8,7 @@ const OntraportForm = () => (
           className="moonray-form-clearfix"
           action="https://forms.ontraport.com/v2.4/form_processor.php?"
           method="post"
-          accept-charset="UTF-8"
-        >
+          accept-charset="UTF-8">
           <div className="moonray-form-element-wrapper moonray-form-element-wrapper-contracted moonray-form-element-wrapper-alignment-left moonray-form-input-type-email">
             <label
               for="mr-field-element-158290981969"
