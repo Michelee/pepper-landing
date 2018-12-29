@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('fonts/SweetSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DomaineDisp';
+  src: url('fonts/DomaineDisp-Regular.otf') format('truetype');
+}
+
+.opt-container {
+  background-color: transparent !important;
+}
+
+.header {
+  background-color: #2e353f;
+  padding: 1.2em;
+  text-align: center;
+
+  .pepper-logo {
+    width: 200px;
+    height: auto;
+
+    @media screen and (max-width: 520px) {
+      width: 150px;
+    }
+  }
+}
+
+.layout {
+  background-image: url('../images/bglanding.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 77px);
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 520px) {
+    height: calc(100vh - 64px);
+  }
+
+  .ontraport-btn {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.3em 0.6em;
+    letter-spacing: 0.05em;
+    color: #333;
+  }
+
+  .container {
+    padding: 2.5em 5em;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 520px) {
+      padding: 2em;
+    }
+
+    h1 {
+      color: white;
+      font-size: 4em;
+      line-height: 1.2em;
+      font-weight: normal;
+      font-family: 'DomaineDisp', serif;
+
+      @media screen and (max-width: 520px) {
+        font-size: 3em;
+      }
+    }
+
+    img {
+      width: 35px;
+      height: auto;
+    }
+
+    .making-moves-letter {
+      width: 250px;
+      height: auto;
+    }
+
+    .opening {
+      color: #424e5b;
+      text-transform: uppercase;
+      font-family: 'SweetSansPro', sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+
+    #ontraport-form {
+      padding-top: 2em;
+      display: flex;
+
+      label {
+        margin: 0;
+      }
+
+      input {
+        font-family: 'SweetSansPro', sans-serif;
+        outline: none;
+        font-size: 12px;
+        color: #616161;
+      }
+
+      input,
+      button {
+        border: 1px solid rgb(97, 97, 97);
+        outline: none;
+      }
+
+      input[type=submit] {
+        border-left: 0;
+        background-color: #e5b593;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
