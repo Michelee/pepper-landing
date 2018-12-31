@@ -8,10 +8,6 @@
   src: url('fonts/DomaineDisp-Regular.otf') format('truetype');
 }
 
-.opt-container {
-  background-color: transparent !important;
-}
-
 .header {
   background-color: #2e353f;
   padding: 1.2em;
@@ -54,6 +50,7 @@
     padding: 2.5em 5em;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 77px);
 
     @media screen and (max-width: 520px) {
       padding: 2em;
@@ -102,6 +99,7 @@
         outline: none;
         font-size: 12px;
         color: #616161;
+        
       }
 
       input,

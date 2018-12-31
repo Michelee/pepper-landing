@@ -616,29 +616,27 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
-/* .moonray-form-p2c191623f3 {
-  position: absolute;
-  bottom: -12px;
-} */
 
 .moonray-form-p2c191623f3 form {
-  /* padding-left: 6em; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-/* .moonray-form-p2c191623f3 input {
-  width: 250px;
-  font-family: 'SweetSansPro', sans-serif;
-  outline: none;
-  font-size: 12px;
-  padding: 0.2em 0.5em;
-  color: #616161;
-} */
+.moonray-form {
+  width: 480px !important;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+
+  .moonray-form {
+    width: 100% !important;
+  }
+
+  .moonray-form-input-type-email {
+    min-width: 180px;
+  }
+}
